@@ -1,3 +1,8 @@
+/* ===================================================
+   Марина Жилина — психолог по самоопределению
+   Одностраничник: единый стиль, спокойная палитра
+   =================================================== */
+
 * {
   box-sizing: border-box;
 }
@@ -630,30 +635,66 @@ img {
   color: #fff;
 }
 
-.contact-block-subtext {
-  font-weight: 700;
-  font-size: 1.3rem;
-  letter-spacing: 0.02em;
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 10px;
 }
 
-.telegram-link {
+.contact-link {
   display: inline-flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 8px;
-  padding: 13px 26px;
+  gap: 10px;
+  padding: 11px 20px;
   border-radius: 999px;
-  background: var(--accent);
+  background: rgba(255, 255, 255, 0.16);
   color: #fff;
   text-decoration: none;
   font-weight: 700;
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.18);
+  box-shadow: 0 10px 20px rgba(15, 39, 89, 0.16);
   transition: transform 0.2s ease, background 0.2s ease;
 }
 
-.telegram-link:hover {
+.contact-link:hover {
   transform: translateY(-1px);
-  background: var(--accent-dark);
+  background: rgba(255, 255, 255, 0.22);
+}
+
+.contact-link-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 800;
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+.contact-link-icon svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.contact-link--whatsapp .contact-link-icon {
+  background: #25d366;
+  color: #fff;
+}
+
+.contact-link--telegram .contact-link-icon {
+  background: #229ed9;
+  color: #fff;
+}
+
+.contact-link--max .contact-link-icon {
+  background: #fff;
+  color: var(--accent);
 }
 
 /* ---------- Якоря под липкой шапкой ---------- */
